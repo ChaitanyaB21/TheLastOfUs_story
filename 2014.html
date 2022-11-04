@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us:Left Behind</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="2013_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav style="color: white" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand  bi bi-playstation" href="https://www.playstation.com/en-in/"> PlayStation</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#card-body">About</a>
+                    </li>
+
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <img src="Logos/2014_1-removebg1.png" width="40%"
+        class="img-fluid img-responsive center-block d-block mx-auto hidden" alt="...">
+
+    <div class="container ratio ratio-16x9">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FjkM414zZRU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="container">
+        <p class="hidden">
+            <br><br>
+            After an ambush that leaves Joel (Troy Baker) severely injured, Ellie (Ashley Johnson) searches an abandoned
+            mall in Colorado for supplies to heal him. She discovers a medical kit in a derelict military helicopter
+            that has crashed through the roof. Making her way back to the unconscious Joel, Ellie must deal with the
+            Infected and members of the hostile human group who injured Joel in the first place. She fights her way back
+            to Joel, treats his injury, and takes him to a hideout to see out the worsening winter.
+            <br><br>
+            Months earlier, three weeks before Ellie meets Joel, Riley Abel (Yaani King) surprises her at their Boston
+            military boarding school after running away over a month ago. She reveals that she has joined the Fireflies,
+            a revolutionary militia group, and takes Ellie to explore an abandoned mall. They have fun with a carousel,
+            photo booth, arcade, and Halloween store before having a water gun fight. Riley reveals that she has been
+            assigned to a group of Fireflies in a different city, but broke the rules to come and see Ellie one last
+            time. The girls argue, but Ellie eventually tells Riley that she supports her decision as she knows Riley
+            has wanted it for a long time. Before they part ways, Riley plugs Ellie's Walkman into the sound system of
+            an electronics store, and the two dance on a display case to Etta James's cover of "I Got You Babe". Ellie
+            tearfully begs Riley not to leave; Riley agrees and rips her Firefly pendant off, prompting Ellie to kiss
+            her. Riley responds positively, though the two are then chased by a horde of Infected alerted by the music.
+            They outrun most of the Infected and kill the remainder, getting bitten in the process. They briefly
+            consider shooting themselves to prevent the infection taking over them, but instead choose to spend their
+            final hours together. While Riley is assumed to have succumbed to the infection, Ellie discovers that she is
+            immune, triggering the events of The Last of Us.
+
+        </p>
+    </div>
+    <br><br>
+    <div class="text-center">
+        <a href="https://store.playstation.com/en-us/product/UP9000-CUSA00553_00-THELASTOFUS00000"
+            target="_blank"><button type="button" class="btn btn-secondary btn-lg btn-block">Buy Now</button></a>
+    </div>
+
+    <br><br>
+    <div style="background-color: beige;" class="card">
+        <div class="card-header">
+
+        </div>
+        <div id="card-body" class="card-body">
+            <h5 class="card-title">This Website is created by Chaitanya Ghodmare</h5>
+            <a href="https://www.instagram.com/chaitanyarghodmare/?next=%2F" class="fa fa-instagram" target="_blank">
+                Instagram</a><br>
+            <a href="https://www.linkedin.com/in/chaitanya-ghodmare-35b463241/" class="fa fa-linkedin" target="_blank">
+                Linkedin</a><br>
+            <a href="https://github.com/ChaitanyaB21" class="fa fa-github" target="_blank"> Github</a><br>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }//else{
+                //     entry.target.classList.remove('show');
+                // }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+
+</html>
